@@ -217,6 +217,13 @@ Client::Client(QWidget *parent)
     : QDialog(parent)
 
 {
+  setAutoFillBackground(1 );
+  QColor bordercol( 8, 22, 18 );
+
+  QPalette borderpal(Qt::darkGreen, bordercol, QColor( 28, 18, 18 ),
+                     QColor( 24, 64, 6 ), Qt::black, Qt::green, QColor( 8, 22, 12 ) );
+ setPalette( borderpal );
+
     coute_=0;
     boicount_=0;
     spot_tec_=-1111;
